@@ -1,0 +1,12 @@
+[project]
+name = "selenium-web-driver-hands-on-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pytest>=9.0.3",
+    "pytest-html>=4.2.0",
+    "selenium>=4.44.0",
+    "webdriver-manager>=4.1.1",
+]
