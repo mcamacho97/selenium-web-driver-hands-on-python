@@ -1,11 +1,18 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.remote.webdriver import WebDriver
 
-def get_chrome_driver():
-    
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    
-    driver.maximize_window()
-    
-    return driver
+
+def get_web_driver(browser: str = "chrome") -> WebDriver:
+
+    browser = browser.lower()
+
+    browsers = {
+        "chrome": webdriver.Chrome,
+        "firefox": webdriver.Firefox,
+        "edge": webdriver.Edge,
+    }
+
+    if browser not in browsers:
+        raise ValueError(f"Unsupported browser: {browser}")
+
+    return browsers[browser]()
