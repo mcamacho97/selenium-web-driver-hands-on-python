@@ -62,4 +62,3 @@ Este es un proyecto de ejemplo; los PRs son bienvenidos. Para cambios mayores, a
 ## Licencia
 
 Libre para uso educativo y de pruebas. Puedes añadir una licencia explícita si vas a publicar en un repositorio público.
-# selenium-web-driver-hands-on-python
