@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
+
 from pages.base_page import BasePage
 import time
 
@@ -27,4 +28,3 @@ class LoginPage(BasePage):
         self.wait_for_element(self.LOGIN_BTN)
         self.click(self.LOGIN_BTN)
         time.sleep(2)
-
